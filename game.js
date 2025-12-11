@@ -86,7 +86,7 @@ function buildGridCache() {
         CELL,
         CELL,
         {
-          stroke: '#444',
+          stroke: 'rgba(0, 0, 0, 0.8)',
           strokeWidth: 1,
           fill: 'transparent',
           seed: 82517
@@ -141,7 +141,7 @@ function draw() {
       CELL,
       CELL,
       {
-        fill: 'rgba(173,216,230,1)',
+        fill: 'rgba(0,0,0,0.2)',
         stroke: 'transparent',
         seed: 82517
       }
@@ -202,7 +202,7 @@ function draw() {
   // --------------------------------------------------------
   if (showCongrats) {
     // Dim the background
-    ctx.fillStyle = 'rgba(255,255,255,0.9)';
+    ctx.fillStyle = 'rgba(250, 240, 230,0.9)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     // Center box
@@ -212,7 +212,7 @@ function draw() {
     const boxY = (canvas.height - boxH) / 2;
 
     const msgBox = generator.rectangle(boxX, boxY, boxW, boxH, {
-      fill: 'rgba(144,238,144,0.8)',
+      fill: 'rgba(178, 7, 16, 0.3)',
       fillStyle: 'zigzag',
       roughness: 2,
       seed: 82517
@@ -233,7 +233,7 @@ function draw() {
     const btnY = boxY + 80;
 
     const btn = generator.rectangle(btnX, btnY, btnW, btnH, {
-      fill: 'rgba(144,238,144,1)',
+      fill: 'rgba(178, 7, 16, 0.6)',
       fillStyle: 'solid',
       stroke: '#333',
       roughness: 2,
@@ -241,7 +241,7 @@ function draw() {
     });
     rc.draw(btn);
 
-    ctx.fillStyle = '#222';
+    ctx.fillStyle = '#000';
     ctx.font = '20px Arial';
     ctx.fillText('Play again', btnX + btnW / 2, btnY + btnH / 2);
 
@@ -324,12 +324,12 @@ function finishSelection() {
 
     permanentHighlights = permanentHighlights.filter(h => {
       const inWord = selectedCells.some(s => s.r === h.r && s.c === h.c);
-      return !(inWord && h.color === 'orange');
+      return !(inWord && h.color === 'rgba(0, 0, 0, 0.3)');
     });
 
     selectedCells.forEach(s => {
       if (!permanentHighlights.some(h => h.r === s.r && h.c === s.c))
-        permanentHighlights.push({ r: s.r, c: s.c, color: 'lightgreen' });
+        permanentHighlights.push({ r: s.r, c: s.c, color: 'rgba(178, 7, 16, 0.5)' });
     });
 
     if (wordsFound >= pathWords.length) {
@@ -339,7 +339,7 @@ function finishSelection() {
     const intersections = selectedCells.filter(s => solSet.has(key(s.r, s.c)));
     intersections.forEach(s => {
       if (!permanentHighlights.some(h => h.r === s.r && h.c === s.c))
-        permanentHighlights.push({ r: s.r, c: s.c, color: 'orange' });
+        permanentHighlights.push({ r: s.r, c: s.c, color: 'rgba(0, 0, 0, 0.3)' });
     });
   }
 }
