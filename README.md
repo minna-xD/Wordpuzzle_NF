@@ -1,14 +1,3 @@
-# 🎄Word puzzle
+# Word puzzles
 
-Search the grid for words that relate to the book / TV series _Nos4a2_ (created by Joe Hill), available on Netflix. If you are having trouble finding all the words, just drag the mouse all over the grid and it will reveal the missing letters.
-
-## Code
-
-The game has been coded with the help of ChatGPT. I'm using [Rough.js](https://roughjs.com/) to create a beautiful hand-drawn look.
-The basic structure (word list, word placements, filler letters) are designed by me.
-
-It took quite a few rounds to get the game to work roughly the way I wanted it to:
-* By default, Rough.js draws randomly after every mouse event. I wanted the grid to stay static.
-* I wanted to make a counter to keep track of how many words are left to be found.
-* First, the game would allow selecting substrings and counted each as a new word. Now it requires selecting a word from start to finish before it's marked as green and counted as a found word.
-* I wanted to add a popup box when the game is finished.
+Two playable word puzzles and one hand-drawn design (Bonza-style puzzle turned out to be quite complex to code).
