@@ -15,13 +15,13 @@ It took quite a few rounds to get the game to work roughly the way I wanted it t
 
 [Play](gridwords.htm)
 
-# Drawn Bonza-style puzzle: Gabby's Dollhouse
+# 🏡Drawn Bonza-style puzzle: Gabby's Dollhouse
 
 The game has been designed on Procreate for iPad.
 
 [View](bonza.htm)
 
-# Playable Keysmash-style puzzle: False friends in computing
+# 👩‍💻 Playable Keysmash-style puzzle: False friends in computing
 
 The game has been coded with the help of ChatGPT. The page has an English and a Finnish puzzle
 
