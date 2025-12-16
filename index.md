@@ -1,5 +1,3 @@
-# Some word puzzles
-
 ## 🎄Playable Waywords-style puzzle: Nos4a2
 
 Search the grid for words that relate to the book / TV series _Nos4a2_ (created by Joe Hill), available on Netflix. If you are having trouble finding all the words, just drag the mouse all over the grid and it will reveal the missing letters.
