@@ -1,6 +1,6 @@
 # Word puzzles
 
 Two playable word puzzles and one hand-drawn design (Bonza-style puzzle turned out to be quite complex to code).
-These were not created to showcase coding experience.
+These were not created to showcase coding experience. The puzzle types are referring to _Netflix Puzzled_.
 
 View on [GitHub Pages](https://minna-xd.github.io/Wordpuzzle_NF/)
