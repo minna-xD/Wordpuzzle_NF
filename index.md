@@ -19,7 +19,10 @@ It took quite a few rounds to get the game to work roughly the way I wanted it t
 
 ## 😝 Playable Keysmash-style puzzle: Say a!
 
-The game has been coded with the help of ChatGPT. The page has an English and a Finnish puzzle
+The page has an English and a Finnish puzzle. The Netflix Puzzled's Keysmash shows consonants; I wanted to look for words with just the vowel 'a'.
+
+### Code
+The game has been coded with the help of ChatGPT. To the original draft I added jumping from input field to the next one after solving a word, and disabling each game after solving (either by using hints or guessing correctly).
 
 [Play](saya.htm)
 

@@ -99,6 +99,9 @@ function createGameEN(word, description) {
         return;
       }
     }
+    input.disabled = true;
+    guessBtn.disabled = true;
+    hintBtn.disabled = true;
   }
 
   function checkGuess() {
@@ -139,7 +142,7 @@ function createGameEN(word, description) {
 function createGameFI(word, description) {
   let revealed = Array(word.length).fill(false);
 
-  // Reveal vowels initially
+  // Vowels
   for (let i = 0; i < word.length; i++) {
     if (!consonants.includes(word[i])) {
       revealed[i] = true;
@@ -179,6 +182,9 @@ function createGameFI(word, description) {
         return;
       }
     }
+    input.disabled = true;
+    guessBtn.disabled = true;
+    hintBtn.disabled = true;
   }
 
   function checkGuess() {
