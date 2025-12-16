@@ -1,0 +1,32 @@
+body {
+    margin: 10px 20%;
+    font-family: sans-serif;
+    background: #FAF0E6;
+}
+
+
+div#footer {
+    padding-top: 50px;
+}
+
+/* Grid words */
+canvas { display: block; margin: 20px auto; background: #FAF0E6; }
+
+/* Say A */
+#games1 {
+    width: 500px;
+    float: left;
+}
+#games2 {
+    width: 500px;
+    float: left;
+}
+div.game1, div.game2 {
+    margin-top: 30px;
+}
+.game1 p, .game2 p {
+    font-weight: bold;
+}
+.game1 div, .game2 div {
+    letter-spacing: 3px;
+}
